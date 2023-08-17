@@ -37,5 +37,69 @@ Demo from this repository:
             "category": "starwars",
             "id": 2
         }
+ ]
 }
 ```
+
+
+## Do i by your own
+
+
+If you want to create the project from scratch, I have a Youtube video [Tutorial (spanish) that teach you how to deploy your own fake API with db-json and vercel.]() 
+
+### 1
+
+create a new repository, (**alurageek-API**) for example. then clone that empty repository 
+
+### 2
+
+You need to run the npm init command:
+```npm init -y```
+
+This will generate a **package.json** now what you need to do is to change this line:
+
+```"test": "echo\"Error:no test specified\" && exit 1" ```
+
+For this one:
+
+```"start": "node index.js"```
+
+### 3
+
+Now its time to run the command:
+
+```npm install json-server cors```
+
+![Alt text](image.png)
+
+You will see that the **cors** and ***json-server*** was added to the package.json.
+
+### 4
+
+run the command:
+```npm install json-serve```
+
+add the ***.gitignore*** file, an add the ***node_modules***
+
+###
+
+create a ***db.json*** file. 
+and add your own data.
+
+Also, you will need to add this **index.js** file:
+
+```const jsonServer = require("json-server"); // importing json-server library
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3001
+
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
+```
+
+# Don't forget to commit & push your changes 🐣
+
+Go to your vercel account, connect a new project with your repository and deploy it💙
