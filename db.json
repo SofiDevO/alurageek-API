@@ -1,0 +1,124 @@
+{
+    "product": [
+        {
+            "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+            "name": "Trooper taza",
+            "price": "$60.00",
+            "Description": "Taza casco Trooper",
+            "category": "starwars",
+            "id": 1
+        },
+        {
+            "img": "https://cdn1.coppel.com/images/catalog/mkp/1773/5000/17733590-1.jpg",
+            "name": "Funko Vader",
+            "price": "$60.00",
+            "Description": "Funko coleccionable Darth vader",
+            "category": "starwars",
+            "id": 2
+        },
+        {
+            "img": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12N6pr.img?w=500&h=500&m=6",
+            "name": "Grogu (Baby Yoda)",
+            "price": "$100.00",
+            "Description": "Grogu peluche electrónico",
+            "category": "starwars",
+            "id": 3
+        },
+        {
+            "img": "https://cdn.shopify.com/s/files/1/0563/9831/5692/files/luke-skywalker-lightsaber-hilt.png?v=1656863305",
+            "name": "Lightsaber",
+            "price": "$3000.00",
+            "Description": "Sable de luz para duelos",
+            "category": "starwars",
+            "id": 4
+        },
+        {
+            "img": "https://tooys.mx/media/wysiwyg/Darth_Vader-estatua-premium-format-por-sideshow-19.png",
+            "name": "Darth Vader",
+            "price": "$450.00",
+            "Description": "DarDarth  Vader figura de coleción",
+            "category": "starwars",
+            "id": 5
+        },
+        {
+            "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+            "name": "X12 Plus",
+            "price": "$4500.00",
+            "Description": "consola portatil, 16 Gb de RAM",
+            "category": "consolas",
+            "id": 1
+        },
+        {
+            "img": "https://revistasociosams.com/wp-content/uploads/2021/03/control-inalambrico-Xbox%E2%80%8B-1.png",
+            "name": "Control Xbox One",
+            "price": "$950.00",
+            "Description": "Control Xbox serie One",
+            "category": "consolas",
+            "id": 2
+        },
+        {
+            "img": "https://www.incentivosblackhawk.com.mx/wp-content/uploads/2022/05/Steam.png",
+            "name": "Steam Card",
+            "price": "$200.00",
+            "Description": "steam card 200 pelucholares",
+            "category": "consolas",
+            "id": 3
+        },
+        {
+            "img": "https://www.techpowerup.com/review/scuf-impact-controller-ps4-pc/images/small.png",
+            "name": "Control usb",
+            "price": "$500.00",
+            "Description": "Control de china",
+            "category": "consolas",
+            "id": 4
+        },
+        {
+            "img": "https://virtumaniacos.com/wp-content/uploads/2022/03/playstation-vr-visor.webp",
+            "name": "Oculus Quest 2 ",
+            "price": "$4500.00",
+            "Description": "Su versatilidad nos va a permitir usarlas en formato Standalone, es decir no depende de ningún otro elemento como cámaras o hardware externo, y esto las ha convertido el las gafas VR más vendidas desde 2020. Incluso puedes conectarlas a un ordenador (opcional) por cable o por wifi para jugar a juegos y usar aplicaciones aún más exigentes. ",
+            "category": "consolas",
+            "id": 5
+        },
+        {
+            "img": "https://ae01.alicdn.com/kf/H8e03eb93f1a6423fbe77f349d3658400L/Figuras-de-Pok-mon-Kawaii-para-ni-os-juguetes-de-Pikachu-modelo-de-juguete-de-PVC.png",
+            "name": "Pikachu Panadero",
+            "price": "$500.00",
+            "Description": "Edición especial Pikachu Panadero",
+            "category": "diversos",
+            "id": 1
+        },
+        {
+            "img": "https://ae01.alicdn.com/kf/H113e7f722e694fd7a945b897d9e3103dQ/Figuras-de-Pok-mon-Kawaii-para-ni-os-juguetes-de-Pikachu-modelo-de-juguete-de-PVC.png",
+            "name": "Pikachu Corazón",
+            "price": "$250.00",
+            "Description": "Pikachu edición San valentín",
+            "category": "diversos",
+            "id": 2
+        },
+        {
+            "img": "https://cdn.shopify.com/s/files/1/2437/4099/products/spider-man_marvel_silo_480x672.png?v=1649713239",
+            "name": "Spiderman Hot Toys",
+            "price": "$660.00",
+            "Description": "Hot Toys CosRider: Marvel Spider Man Far From Home - Spider Man — Distrito Max",
+            "category": "diversos",
+            "id": 3
+        },
+        {
+            "img": "https://www.panupli.es/3364-large_default/funko-pop-es-dla-gandalf-montado-en-gwaihir.jpg",
+            "name": "Funko Gandalf en Gwaihir",
+            "price": "$600.00",
+            "Description": "Colecciona el Funko POP de Gandalf montado en el águila Gwaihir de las increíbles películas de El Señor de los Anillos",
+            "category": "diversos",
+            "id": 4
+        },
+        {
+            "img": "https://lemongamesmx.com/cdn/shop/products/fun55641-dragon-ball-z-cell-first-form-glow-in-the-dark-pop-vinyl-figure-popcultcha-01_480x480.png?v=1661980008",
+            "name": "Cell DBZ",
+            "price": "$450.00",
+            "Description": "Cell primera forma, retroiluminado",
+            "category": "diversos",
+            "id": 5
+        }
+    ]
+}
