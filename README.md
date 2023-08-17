@@ -42,7 +42,7 @@ Demo from this repository:
 ```
 
 
-## Do i by your own
+## Do it by your own
 
 
 If you want to create the project from scratch, I have a Youtube video [Tutorial (spanish) that teach you how to deploy your own fake API with db-json and vercel.]() 
