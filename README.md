@@ -128,7 +128,7 @@ server.listen(3000, () => {
 module.exports = server
 ```
 
-### step 3
+### step 6
 
 Create a new file named ***vercel.json***
 
