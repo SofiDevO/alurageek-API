@@ -16,7 +16,7 @@ Demo from this repository:
 
 ## Default `db.json`
 
-```
+```json
 {
  "product": [
         {
@@ -50,21 +50,42 @@ Create a new repository, for example, **alurageek-API**. Then clone that empty r
 ### Step 2
 
 You need to run the npm init command:
-```npm init -y```
+```
+npm init -y
+```
 
-This will generate a **package.json**. Now, what you need to do is change this line:
+This will generate a **package.json**. Now, what you need to do is change this lines:
 
-```"test": "echo \"Error: no test specified\" && exit 1"```
+You will change this line:
+``` 
+ "main": "index.js",
+```
+
+For this:
+
+```
+  "main": "api/server.js",
+```
+
+And this:
+
+```
+"test": "echo \"Error: no test specified\" && exit 1"
+```
 
 To this:
 
-```"start": "node index.js"```
+```
+"start": "node api/server.js"
+```
 
 ### Step 3
 
 Now it's time to run the command:
 
-```npm install json-server cors```
+```
+npm install json-server cors
+```
 
 ![Alt text](image.png)
 
@@ -73,7 +94,9 @@ You'll see that both **cors** and ***json-server*** have been added to the packa
 ### Step 4
 
 Run the command:
-```npm install json-server```
+```
+npm install json-server
+```
 
 Add the ***.gitignore*** file and add ***node_modules***.
 
@@ -81,20 +104,50 @@ Add the ***.gitignore*** file and add ***node_modules***.
 
 Create a ***db.json*** file and add your own data.
 
-Additionally, you'll need to add this **index.js** file:
+Additionally, you'll need to adda new [Folder]()  and, inside, this **server.js** file:
 
-```const jsonServer = require("json-server");
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 3001;
+```javascript
+// See https://github.com/typicode/json-server#module
+const jsonServer = require('json-server')
+const server = jsonServer.create()
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
 
-server.use(middlewares);
-server.use(router);
+server.use(middlewares)
+// Add this before server.use(router)
+server.use(jsonServer.rewriter({
+    '/api/*': '/$1',
+    '/product/:resource/:id/show': '/:resource/:id'
+}))
+server.use(router)
+server.listen(3000, () => {
+    console.log('JSON Server is running')
+})
 
-server.listen(port);
+// Export the Server API
+module.exports = server
 ```
 
+### step 3
+
+Create a new file named ***vercel.json***
+
+```json
+    {
+    "functions": {
+      "api/server.js": {
+        "memory": 1024,
+        "includeFiles": "db.json"
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "api/server.js"
+      }
+    ]
+  }
+```
 # Don't forget to commit & push your changes 🐣
 
 Go to your Vercel account, connect a new project with your repository, and deploy it💙
