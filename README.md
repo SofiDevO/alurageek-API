@@ -41,7 +41,7 @@ Demo from this repository:
 
 ## Build It Yourself
 
-If you'd like to create the project from scratch, I have a YouTube video [Tutorial (Spanish) that guides you through deploying your own fake API with db-json and Vercel.]() 
+If you'd like to create the project from scratch, I have a [YouTube video Tutorial (Spanish) that guides you through deploying your own fake API with db-json and Vercel.](https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw) 
 
 ### Step 1
 
