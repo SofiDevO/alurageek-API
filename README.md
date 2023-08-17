@@ -1,3 +1,4 @@
+[START]
 
 ## Deploy JSON Server to Vercel
 
@@ -54,14 +55,14 @@ You need to run the npm init command:
 npm init -y
 ```
 
-This will generate a **package.json**. Now, what you need to do is change this lines:
+This will generate a **package.json**. Now, what you need to do is change these lines:
 
-You will change this line:
+Change this line:
 ``` 
  "main": "index.js",
 ```
 
-For this:
+To this:
 
 ```
   "main": "api/server.js",
@@ -104,7 +105,7 @@ Add the ***.gitignore*** file and add ***node_modules***.
 
 Create a ***db.json*** file and add your own data.
 
-Additionally, you'll need to adda new [Folder](./api/)  and, inside, this [**server.js**](./api/server.js) file:
+Additionally, you'll need to add a new [Folder called ***api***](./api/)  and, inside it, this [**server.js**](./api/server.js) file:
 
 ```javascript
 // See https://github.com/typicode/json-server#module
@@ -128,30 +129,33 @@ server.listen(3000, () => {
 module.exports = server
 ```
 
-### step 6
+### Step 6
 
 Create a new file named [***vercel.json***](./vercel.json)
 
 ```json
+{
+  "functions": {
+    "api/server.js": {
+      "memory": 1024,
+      "includeFiles": "db.json"
+    }
+  },
+  "rewrites": [
     {
-    "functions": {
-      "api/server.js": {
-        "memory": 1024,
-        "includeFiles": "db.json"
-      }
-    },
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "api/server.js"
-      }
-    ]
-  }
+      "source": "/(.*)",
+      "destination": "api/server.js"
+    }
+  ]
+}
 ```
+
 # Don't forget to commit & push your changes 🐣
 
 Go to your Vercel account, connect a new project with your repository, and deploy it💙
 
 ## You must be patient
 
-It could take a couple minutes to finally work. ⏰🥹
+It could take a couple of minutes to finally work. ⏰🥹
+
+[END]
