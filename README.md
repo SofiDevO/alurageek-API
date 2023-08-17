@@ -104,7 +104,7 @@ Add the ***.gitignore*** file and add ***node_modules***.
 
 Create a ***db.json*** file and add your own data.
 
-Additionally, you'll need to adda new [Folder]()  and, inside, this **server.js** file:
+Additionally, you'll need to adda new [Folder](./api/)  and, inside, this [**server.js**](./api/server.js) file:
 
 ```javascript
 // See https://github.com/typicode/json-server#module
@@ -130,7 +130,7 @@ module.exports = server
 
 ### step 6
 
-Create a new file named ***vercel.json***
+Create a new file named [***vercel.json***](./vercel.json)
 
 ```json
     {
