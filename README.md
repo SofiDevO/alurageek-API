@@ -5,7 +5,7 @@ A template for deploying [JSON Server](https://github.com/typicode/json-server) 
 
 Demo from this repository: 
 
-### How to use
+### How to use (resume)
 
 1. Click "**Use this template**" or clone this repository.
 2. Update or use the default [`db.json`](./db.json) in the repository.
