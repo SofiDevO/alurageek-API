@@ -47,11 +47,11 @@ Demo from this repository:
 
 If you want to create the project from scratch, I have a Youtube video [Tutorial (spanish) that teach you how to deploy your own fake API with db-json and vercel.]() 
 
-### 1
+### 1 step
 
 create a new repository, (**alurageek-API**) for example. then clone that empty repository 
 
-### 2
+### 2 step
 
 You need to run the npm init command:
 ```npm init -y```
@@ -64,7 +64,7 @@ For this one:
 
 ```"start": "node index.js"```
 
-### 3
+### 3 step
 
 Now its time to run the command:
 
@@ -74,14 +74,14 @@ Now its time to run the command:
 
 You will see that the **cors** and ***json-server*** was added to the package.json.
 
-### 4
+### 4 step
 
 run the command:
 ```npm install json-serve```
 
 add the ***.gitignore*** file, an add the ***node_modules***
 
-###
+### 5 step
 
 create a ***db.json*** file. 
 and add your own data.
