@@ -95,8 +95,9 @@ Verás que tanto **cors** como ***json-server*** se han agregado al package.json
 
 Ejecuta el comando:
 ```
-npm install json-server
+npm install json-serve
 ```
+PON ATENCIÓN, YA QUE EL COMANDO DICE ***SERVE*** NO SERVER
 
 Agrega el archivo ***.gitignore*** y agrega ***node_modules***.
 
